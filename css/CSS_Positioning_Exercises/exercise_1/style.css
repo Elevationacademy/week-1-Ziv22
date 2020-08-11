@@ -1,0 +1,32 @@
+#parent{
+    width: 300px;
+    height: 300px;
+    position:absolute;
+    background-color: red;
+}
+.child{
+    background-color: blue;
+    position: absolute;
+}
+
+#child1{
+    width:12.5%; 
+    height:20%;
+}
+#child2{
+    width:83%; 
+    height:20%;
+    right:0;
+}
+#child3{
+    width:83%;
+    height:75%;
+    bottom:0;
+    right:0;
+}
+#child4{
+    width:12.5%;
+    height:75%;
+    bottom:0;
+    left:0;
+}

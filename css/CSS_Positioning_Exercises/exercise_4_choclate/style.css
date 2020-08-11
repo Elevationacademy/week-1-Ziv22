@@ -1,0 +1,23 @@
+#parent{
+    width: 420px;
+    height: 205px;
+    position:absolute;
+    padding: 5px;
+    background-color: black;
+}
+.child{
+    background-color: #66320E;
+    width:100px;
+    height:100px;    
+    position: relative;
+    display: inline-block;
+    margin:1px;
+}
+#child8{
+    background-color: darkred;
+    width:99.5%;
+    height:2px;  
+    bottom:111px;
+    margin-top: 3px; 
+    margin-bottom: 3px;
+}

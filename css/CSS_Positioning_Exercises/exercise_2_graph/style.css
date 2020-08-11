@@ -1,0 +1,53 @@
+#parent{
+    width: 300px;
+    height: 150;
+    position:absolute;
+    background-color: blueviolet;
+}
+#frame{
+    width:280px;
+    height:150px;
+    left:10px;
+    position:absolute;
+}
+.child{
+    background-color: lightgray;
+    position: absolute;
+    width:25px;
+    bottom:10px;
+}
+.text{
+    font-weight: bold;
+    font-family: arial;
+    position: absolute;
+}
+#child1{
+    height:30px;
+}
+#child2{
+    height:90px;
+    margin-left:40px;
+}
+#child3{
+    height:120px;
+    margin-left:80px;
+}
+#child4{
+    height:115px;
+    margin-left:120px;
+}
+#child5{
+    height:105px;
+    margin-left:160px;
+}
+#child6{
+    height:95px;
+    margin-left:200px;
+}
+#child7{
+    top:5px;
+}
+#child8{
+    bottom:10px;
+    right:5px;
+}
