@@ -57,3 +57,69 @@
 // for(index in names){    
 //     people.push({name:names[index],age:ages[index]});
 // }
+
+//Exc 8 
+// const names = ["Ashley", "Donovan", "Lucas"]
+// const ages = [23, 47, 18]
+// const people = []
+
+// for(index in names){    
+//     people.push({name:names[index],age:ages[index]});
+// }
+
+// for (const person of people) {
+//     console.log(`${person.name} is ${person.age} years old`);
+// }
+
+//Exc 9
+// const posts = [
+//     {id: 5, text: "Love this product"},
+//     {id: 10, text: "This is the worst. DON'T BUY!"},
+//     {id: 14, text: "So glad I found this. Bought four already!"}
+//   ]
+
+//   for(post in posts){
+//       if(posts[post].id == 10){
+//           posts.splice(post,1);
+//       }
+//   }
+//   console.log(posts);
+
+//Exc10
+// const posts = [
+//     {
+//       id: 1, 
+//       text: "Love this product",
+//       comments: []
+//     },
+//     { 
+//       id: 2, 
+//       text: "This is the worst. DON'T BUY!", 
+//       comments: [
+//                   {id: 1, text: "Idiot has no idea"}, 
+//                   {id: 2, text:"Fool!"}, 
+//                   {id: 3, text: "I agree!"}
+//                 ]
+//      },
+//      {
+//       id: 3, 
+//       text: "So glad I found this. Bought four already!",
+//       comments: []
+//      }
+//   ]
+// let comment;
+// let commentsArray = [];
+
+//   for(postIndex in posts){
+//       if(posts[postIndex].id == 2){
+//           ommentsArray = posts[postIndex].comments;
+//           for(commentIndex in ommentsArray){
+//               comment = posts[postIndex].comments[commentIndex]
+//               if(comment.id == 3){
+//                   ommentsArray.splice(commentIndex,1);
+//               };;
+//           };
+//       };
+//   };
+
+// Extension
