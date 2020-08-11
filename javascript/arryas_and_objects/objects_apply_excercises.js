@@ -15,24 +15,38 @@
 
 // Exercise 2
 
-// myList = [
-//     {
-//         name: "Tofy", 
-//         breed: "Terrier & Schnauzer",
-//         isAlive: false
-//     },
-//     {
-//         name: "Tito", 
-//         breed: "Miniature Pinscher",
-//         isAlive: true
-//     }
-// ];
+myList = [
+    {
+        name: "Tofy", 
+        breed: "Terrier & Schnauzer",
+        isAlive: false
+    },
+    {
+        name: "Tito", 
+        breed: "Miniature Pinscher",
+        isAlive: true
+    }
+];
 
-// myList[0].color = "cream";
-// myList.pop();
-// console.log(myList.length);
+myList[0].color = "cream";
+myList.pop();
+console.log(myList.length);
 // console.log(myList);
 
 //Exercise 3
 
+myNewList = [
+    {
+        name: "Foxy", 
+        breed: "fox like",
+        isAlive: false
+    },
+    {
+        name: "Rite", 
+        breed: "unknown",
+        isAlive: false
+    }
+];
 
+myList.push(...myNewList);
+console.log(myList);
