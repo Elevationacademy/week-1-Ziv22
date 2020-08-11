@@ -19,3 +19,16 @@
 // let operation = (myObj.toBeggining) ? "push" : "unshift";
 // eval(`myObj.items.${operation}(myObj.item);`);
 // console.log(myObj.items);
+
+//Spot chack 3 
+const human = {
+    age: 0
+}
+
+const babyNameKey = "name"
+const babyNameValue = "Goojibear"
+
+human["name"] = babyNameValue;
+human["name"] = "Johnn";
+
+console.log(human);
