@@ -123,3 +123,16 @@
 //   };
 
 // Extension
+const dictionary = {
+    "A": ["Aardvark", "Abacus", "Actually", "Atomic"],
+    "B": ["Banana", "Bonkers", "Brain", "Bump"],
+    "C": ["Callous", "Chain", "Coil", "Czech"]
+  }
+let words = [];
+  for (letter in dictionary){ // for(let letter of Object.keys(dicionary))
+    console.log(`words that begin with: ${letter}:`);
+      words = dictionary[letter];
+      for(item of words){
+        console.log(item);
+      }
+  }
