@@ -28,25 +28,35 @@ myList = [
     }
 ];
 
-myList[0].color = "cream";
-myList.pop();
-console.log(myList.length);
+// myList[0].color = "cream";
+// myList.pop();
+// console.log(myList.length);
 // console.log(myList);
 
 //Exercise 3
 
-myNewList = [
-    {
-        name: "Foxy", 
-        breed: "fox like",
-        isAlive: false
-    },
-    {
-        name: "Rite", 
-        breed: "unknown",
-        isAlive: false
-    }
-];
+// myNewList = [
+//     {
+//         name: "Foxy", 
+//         breed: "fox like",
+//         isAlive: false
+//     },
+//     {
+//         name: "Rite", 
+//         breed: "unknown",
+//         isAlive: false
+//     }
+// ];
 
-myList.push(...myNewList);
-console.log(myList);
+// myList.push(...myNewList);
+// console.log(myList);
+
+//Exercise 4
+// library = {
+//     books: [
+//         {title: "Harry Potter and the Philosopher's Stone", author: "J. K. Rowling"}, 
+//     ]
+// }
+
+// myList.push(library);
+// console.log(myList);
