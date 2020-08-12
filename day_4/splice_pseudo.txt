@@ -1,0 +1,19 @@
+1. parameters: 
+	1.1 start 
+	1.2 deleteCount
+	1.3 items
+
+2. start logic
+	2.1 if start > length of array ---> 
+		2.1.1 start = length of array 
+	2.2 if start < 0  --> 
+		2.2.1 if array.length + start < 0 --> 
+            2.2.1.1 removes from the beginning - 0 stsrt index = 0; .
+		2.2.2 removes elements from the end of the array - length - deleteCount. 
+3. deleteCount logic 
+    3.1 if deleteCount ommited --> 
+        3.1.1 All arrays elements from start deleted.
+    3.2 if deleteCount >= array.legth - start --> 
+        3.2.1 All arrays elements from start deleted.
+    3.3 if deleteCount =< 0 --> 
+        3.3.1 if item exist 
