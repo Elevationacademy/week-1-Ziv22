@@ -75,20 +75,55 @@
 
 
 //Extension - Splice Challenge
+let newArr = [];
+let returnedArr = [];
+
+const loopArr = function(arr,startPoint, endPoint){
+    let returned = [];
+    for(let i = startPoint; i < endPoint; i++){
+        returned.push(arr[i]);
+        arr[i] = "";
+    }
+    return {returened:returned,arr:arr}
+}
 
 Array.prototype.splice = function(start, deleteCount, ...arrToAdd){
-    let newArr = [];
-    let returnedArr = [];
+    let startCutIndex;
+    let endCutIndex;
+    let looped;
 
+    if(deleteCount == undefined|| deleteCount >=this.length - start  ){
+        startCutIndex = start; 
+        endCutIndex = this.length;
+        looped = loopArr(this,startCutIndex,endCutIndex);
+        console.log(`return array: ${looped.returened}`)
+        console.log(`modified array: ${looped.arr}`)
+        return looped.returened;
+
+        // console.log(`array before change: ${this}`)
+        // for(let i = startCutIndex; i < endCutIndex; i++){
+        //     returnedArr.push(this[i]);
+        //     this[i] = "";
+        // }
+        // console.log(`return array: ${returnedArr}`)
+        // console.log(`modified array: ${this}`)
+        // return returnedArr;
+
+
+
+    }else if(deleteCount <= 0){
+        if(!arrToAdd){
+            return [];
+        } else {
+
+        }
+    }
     if(start > this.length){
        start = this.length;
        this.push(...arrToAdd)
        return this;
        
     } else if(start < 0){
-        let startCutIndex;
-        let endCutIndex;
-        
         if(this.length + start < 0){
             startCutIndex = 0;    
             endCutIndex = deleteCount;
@@ -96,29 +131,41 @@ Array.prototype.splice = function(start, deleteCount, ...arrToAdd){
             startCutIndex = this.length + start;
             endCutIndex = startCutIndex  + deleteCount;
         }
-        console.log(`startCutIndex: ${startCutIndex} endCutIndex: ${endCutIndex}`)
+        looped = loopArr(this,startCutIndex,endCutIndex);
+        console.log(`return array: ${looped.returened}`)
+        console.log(`modified array: ${looped.arr}`)        
+        return looped.returened;
 
-        for (let i = startCutIndex; i < endCutIndex; i++) {
-            returnedArr.push(this[i]); 
-            this[i] = null;
-        }
-        for(item of this){
-            if(item != null){
-                newArr.push(item);
-            }
-        }
-        console.log(newArr)
-        return returnedArr;
+        //helper
+        // console.log(`startCutIndex: ${startCutIndex} endCutIndex: ${endCutIndex}`)
+
+        // for (let i = startCutIndex; i < endCutIndex; i++) {
+        //     returnedArr.push(this[i]); 
+        //     this[i] = null;
+        // }
+        // for(item of this){
+        //     if(item != null){
+        //         newArr.push(item);
+        //     } else {
+
+        //     }
+        // }
+        // this = this.filter(item => item);
+        // console.log(this)
+        // return returnedArr;
     }
 }
 
 let arr = [0,1,2,3,4,5,6,7,8,9,10];
 // console.log(`Array Length: ${arr.length}`);
+console.log(arr.splice(-7,7));
+// console.log(arr);
+// console.log(arr.splice(-5,3));
+// console.log(arr.splice(5,0,11,12,13,15,46,87,59));
+// arr.splice(9);
 
-// console.log(arr.splice(-3,3));
-console.log(arr)
+// console.log(arr);
 
-console.log(arr.splice(-11,3));
-// console.log(arr)
+
 
     
