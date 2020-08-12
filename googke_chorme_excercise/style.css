@@ -1,0 +1,21 @@
+body{
+    margin:0;
+}
+/* nav > li{
+    border:1px solid black
+} */
+nav{
+    height: 50px;
+    width:100%;
+    position:absolute;
+}
+.optionsContainer{
+position: absolute;
+right:0;    
+}
+.navOps{
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+
+}
