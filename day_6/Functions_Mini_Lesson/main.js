@@ -92,6 +92,7 @@ const removeSpecialChars = function(story){
     }
     return seperator;
 }
+
 const deCapitalizer = function(str){
     let deCapitalized = "";
     deCapitalized += str[0].toLowerCase();
